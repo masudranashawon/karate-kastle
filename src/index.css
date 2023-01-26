@@ -226,6 +226,12 @@ h2 {
   cursor: pointer;
   color: var(--color-light);
   opacity: 0.6;
+  transition: all 0.3;
+}
+
+.slider-buttons .prev-btn:hover,
+.slider-buttons .next-btn:hover {
+  opacity: 1;
 }
 
 /*======================
@@ -244,7 +250,7 @@ h2 {
   height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 2.5rem;
   justify-items: center;
   justify-content: center;
   align-items: flex-start;
@@ -252,22 +258,35 @@ h2 {
 }
 
 .slide-content h1 {
-  font-size: 4vw;
+  font-size: 4.5vw;
   text-transform: capitalize;
   display: inline-block;
   font-family: var(--font-ferrum);
   background-color: var(--color-dark-red);
   padding: 0 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide h1 span {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-dark-red);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .slide-content p {
   width: 60%;
-  font-size: 1.5vw;
+  font-size: 1.6vw;
+  overflow: hidden;
 }
 
 .slide-cta-link {
   display: inline-block;
-  font-size: 2.2vw;
+  font-size: 2.1vw;
   overflow: hidden;
   position: relative;
   z-index: 2;
@@ -275,6 +294,7 @@ h2 {
   color: var(--color-light);
   padding: 0.5rem 2rem;
   border-radius: 0.5rem;
+  text-transform: uppercase;
 }
 
 .slide-cta-link::before {

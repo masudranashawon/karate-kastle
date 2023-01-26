@@ -1,17 +1,17 @@
 import { useRef } from "react";
 import { CgMenuRight } from "react-icons/cg";
-import { useLinkDownFall } from "../hooks/gsap";
+import { useGsapLinkDownFall } from "../hooks/gsap";
 
 const Navbar = () => {
   const mainNavRef = useRef(null);
-  const logoRef = useRef();
-  const navLink1 = useRef();
-  const navLink2 = useRef();
-  const navLink3 = useRef();
-  const navLink4 = useRef();
-  const navLink5 = useRef();
-  const navLink6 = useRef();
-  const navLink7 = useRef();
+  const logoRef = useRef(null);
+  const navLink1 = useRef(null);
+  const navLink2 = useRef(null);
+  const navLink3 = useRef(null);
+  const navLink4 = useRef(null);
+  const navLink5 = useRef(null);
+  const navLink6 = useRef(null);
+  const navLink7 = useRef(null);
 
   const navSecArr = [
     logoRef,
@@ -33,7 +33,7 @@ const Navbar = () => {
     mainNavRef.current.classList.remove("nav-open");
   };
 
-  useLinkDownFall(navSecArr);
+  useGsapLinkDownFall(navSecArr);
 
   return (
     <nav className='navbar' ref={mainNavRef}>
