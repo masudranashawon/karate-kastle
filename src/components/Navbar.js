@@ -42,7 +42,7 @@ const Navbar = () => {
           <a href='./'>
             <img
               className='logo'
-              src='https://i.ibb.co/5BjmCK8/karate-kastle-logo.png'
+              src='https://i.ibb.co/dGhty6N/karate-kastle-logo.png'
               alt='logo'
             />
           </a>

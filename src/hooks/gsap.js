@@ -7,7 +7,6 @@ gsap.registerPlugin(ScrollTrigger);
 export const useLinkDownFall = (arr) => {
   useEffect(() => {
     const el = arr.map((item) => item.current);
-    console.log(el);
     gsap.fromTo(
       el,
       {
@@ -20,5 +19,5 @@ export const useLinkDownFall = (arr) => {
         ease: "Power4.out",
       }
     );
-  }, []);
+  }, [arr]);
 };
