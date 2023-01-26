@@ -99,6 +99,10 @@ body {
   max-width: 2160px;
 }
 
+section {
+  padding: 10rem 0;
+}
+
 img {
   width: 100%;
   display: block;
@@ -313,4 +317,30 @@ h2 {
 
 .slide-cta-link:hover::before {
   width: 100%;
+}
+
+/*======================
+  About
+====================== */
+.about-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+}
+
+.about .red-line {
+  width: 25%;
+  height: 0.6rem;
+  background-color: var(--color-primary);
+  display: block;
+}
+
+.section-title {
+  font-size: 4.5rem;
+  line-height: 1.2;
+  margin: 1rem 0;
+}
+
+.about .about-description {
+  font-size: 2rem;
 }

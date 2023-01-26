@@ -1,3 +1,4 @@
+import About from "./About";
 import Navbar from "./Navbar";
 import Slider from "./Slider";
 
@@ -6,6 +7,7 @@ const Home = () => {
     <div className='home'>
       <Navbar />
       <Slider />
+      <About />
     </div>
   );
 };

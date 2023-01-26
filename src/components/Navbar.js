@@ -57,28 +57,28 @@ const Navbar = () => {
               </a>
             </li>
             <li ref={navLink2}>
-              <a className='main-nav-link' href='#features'>
-                Features
-              </a>
-            </li>
-            <li ref={navLink3}>
-              <a className='main-nav-link' href='#abot'>
+              <a className='main-nav-link' href='#about'>
                 About
               </a>
             </li>
-            <li ref={navLink4}>
+            <li ref={navLink3}>
               <a className='main-nav-link' href='#gallery'>
                 Gallery
               </a>
             </li>
-            <li ref={navLink5}>
+            <li ref={navLink4}>
               <a className='main-nav-link' href='#trainers'>
                 Trainers
               </a>
             </li>
-            <li ref={navLink6}>
+            <li ref={navLink5}>
               <a className='main-nav-link' href='#why-us'>
-                Why Choose Us
+                Why Choose us
+              </a>
+            </li>
+            <li ref={navLink6}>
+              <a className='main-nav-link' href='#contact'>
+                Contact
               </a>
             </li>
             <li ref={navLink7}>
