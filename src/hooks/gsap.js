@@ -360,3 +360,25 @@ export const useGsapGallaryUpward = (item, obs, delay) => {
     );
   }, [item, obs]);
 };
+
+export const useGsapFooterHeadline = (item, trig) => {
+  useEffect(() => {
+    const el = item.current;
+
+    gsap.fromTo(
+      el,
+      {
+        y: "-100%",
+      },
+      {
+        y: 0,
+        duration: 1,
+        ease: "Power4.out",
+        scrollTrigger: {
+          trigger: trig.current,
+          toggleActions: "play",
+        },
+      }
+    );
+  }, []);
+};

@@ -504,3 +504,21 @@ section.gallery {
 .gallery .box:hover .box-overlay {
   top: 0;
 }
+
+footer {
+  text-align: center;
+  padding: 1vw 0;
+  background-color: var(--color-dark);
+}
+
+.footer h1 {
+  font-family: var(--font-karate);
+  font-size: 3vw;
+  font-weight: 100;
+  color: var(--color-light);
+}
+
+.footer p {
+  font-size: 1.8rem;
+  color: var(--color-light);
+}
