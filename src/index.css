@@ -100,7 +100,15 @@ body {
 }
 
 section {
-  padding: 10rem 0;
+  padding: 5rem 0;
+}
+
+.section-title {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin: 1rem 0;
+  text-transform: capitalize;
+  font-weight: 700;
 }
 
 img {
@@ -330,17 +338,70 @@ h2 {
 
 .about .red-line {
   width: 25%;
-  height: 0.6rem;
+  height: 0.5rem;
   background-color: var(--color-primary);
   display: block;
 }
 
-.section-title {
-  font-size: 4.5rem;
-  line-height: 1.2;
-  margin: 1rem 0;
+.about .about-description {
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  word-spacing: 2px;
 }
 
-.about .about-description {
-  font-size: 2rem;
+.about .section-title span {
+  color: var(--color-primary);
+  font-family: var(--font-karate);
+  font-weight: 100;
+}
+
+.about .about-karate {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  align-content: space-between;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.about .karate-style {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.about .karate-style .icon {
+  width: 6rem;
+  height: 6rem;
+  border: 2px solid var(--color-gray);
+  border-radius: 50%;
+  font-size: 4rem;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  color: var(--color-primary);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.about .karate-style .icon.wado-wyu {
+  color: black;
+}
+
+.about .karate-style .icon:hover {
+  background-color: var(--color-gray);
+  border: 2px solid var(--color-dark-red);
+}
+
+.about-karate-style h3 {
+  font-size: 2.5rem;
+  color: var(--color-primary);
+  font-weight: 400;
+  font-family: var(--font-ferrum);
+  letter-spacing: 2px;
+}
+.right-sec {
+  padding: 5rem;
 }

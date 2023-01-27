@@ -10,7 +10,7 @@ const About = () => {
           <div className='about-content'>
             <span className='red-line'></span>
             <h2 className='section-title'>
-              Welcome to our <span>Karate Kastle</span>
+              Welcome to <span>Karate Kastle</span>
             </h2>
             <p className='about-description'>
               Karate Kastle is a premier martial arts institute that offers a
@@ -30,7 +30,7 @@ const About = () => {
                 <TbKarate />
               </div>
               <div className='about-karate-style'>
-                <h3>Shotokan</h3>
+                <h3>Shotokan Karate</h3>
               </div>
             </div>
             <div className='karate-style'>
@@ -38,15 +38,15 @@ const About = () => {
                 <GrYoga />
               </div>
               <div className='about-karate-style'>
-                <h3>Goju-ryu</h3>
+                <h3>Goju-ryu Karate</h3>
               </div>
             </div>
             <div className='karate-style'>
-              <div className='icon'>
+              <div className='icon wado-wyu'>
                 <TbYoga />
               </div>
               <div className='about-karate-style'>
-                <h3>Wado-ryu</h3>
+                <h3>Wado-ryu Karate</h3>
               </div>
             </div>
             <div className='karate-style'>
@@ -54,7 +54,7 @@ const About = () => {
                 <GiSwordwoman />
               </div>
               <div className='about-karate-style'>
-                <h3>Kyokushin</h3>
+                <h3>Kyokushin Karate</h3>
               </div>
             </div>
           </div>
@@ -62,7 +62,7 @@ const About = () => {
         <div className='right-sec'>
           <div className='about-image'>
             <img
-              src='https://i.ibb.co/MV4TKYm/about-image.png'
+              src='https://i.ibb.co/7SKyT2V/about-image.png'
               alt='Two women try to learn karate'
             />
           </div>
