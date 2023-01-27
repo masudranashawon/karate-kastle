@@ -110,6 +110,18 @@ section {
   margin: 1rem 0;
   text-transform: capitalize;
   font-weight: 700;
+  position: relative;
+  overflow: hidden;
+}
+
+.text-slider {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-dark-red);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 img {
@@ -335,7 +347,12 @@ h2 {
   display: grid;
   grid-template-columns: 50% 50%;
   align-items: center;
+  overflow: hidden;
 }
+
+/* .about .about-content {
+  overflow: hidden;
+} */
 
 .about .red-line {
   width: 25%;

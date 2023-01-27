@@ -104,3 +104,129 @@ export const useGsapCtaUpward = (arr) => {
     );
   }, [arr]);
 };
+
+export const useGsapsectionTextUnvile = (item, obs) => {
+  useEffect(() => {
+    const el = item.current;
+    const trig = obs.current;
+    gsap.fromTo(
+      el,
+      {
+        x: "-100%",
+      },
+      {
+        x: "100%",
+        duration: 1,
+        ease: "Power4.out",
+        scrollTrigger: {
+          trigger: trig,
+          start: "top center",
+          end: "bottom center",
+          toggleActions: "play reverse play reverse",
+        },
+      }
+    );
+  }, [item, obs]);
+};
+
+export const useGsapRedLineDownFall = (item, obs) => {
+  useEffect(() => {
+    const el = item.current;
+    const trig = obs.current;
+
+    gsap.fromTo(
+      el,
+      {
+        y: -100,
+      },
+      {
+        y: 0,
+        duration: 1.5,
+        ease: "Power4.out",
+        scrollTrigger: {
+          trigger: trig,
+          start: "top center",
+        },
+      }
+    );
+  }, [item, obs]);
+};
+
+export const useGsapAboutDescUpward = (item, obs) => {
+  useEffect(() => {
+    const el = item.current;
+    const trig = obs.current;
+
+    gsap.fromTo(
+      el,
+      {
+        opacity: 0,
+        y: 100,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        delay: 1,
+        ease: "Power4.out",
+        scrollTrigger: {
+          trigger: trig,
+          start: "top center",
+        },
+      }
+    );
+  }, [item, obs]);
+};
+
+export const useGsapKarateStyleDownFall = (arr, obs) => {
+  useEffect(() => {
+    const el = arr.map((item) => item.current);
+    const trig = obs.current;
+
+    gsap.fromTo(
+      el,
+      {
+        y: -500,
+      },
+      {
+        y: 0,
+        delay: 1.5,
+        duration: 1.5,
+        stagger: 0.2,
+        ease: "Power4.out",
+        scrollTrigger: {
+          trigger: trig,
+          start: "top center",
+        },
+      }
+    );
+  }, [arr, obs]);
+};
+
+export const useGsapAboutBackward = (item, obs) => {
+  useEffect(() => {
+    const el = item.current;
+    const trig = obs.current;
+
+    gsap.fromTo(
+      el,
+      {
+        transform: "rotate(60deg)",
+        x: "120%",
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        transform: "rotate(0deg)",
+        x: 0,
+        delay: 1.5,
+        duration: 1,
+        ease: "Power4.out",
+        scrollTrigger: {
+          trigger: trig,
+          start: "top center",
+        },
+      }
+    );
+  }, [item, obs]);
+};
