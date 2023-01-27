@@ -34,6 +34,7 @@
   --color-dark: #333333;
   --color-gray: #b2b2a8;
   --color-dark-gray: #afafaf;
+  --color-light-gray: #eeeeee;
 
   --font-karate: "Karate", serif;
   --font-highwind: "Highwind", serif;
@@ -112,6 +113,12 @@ section {
   font-weight: 700;
   position: relative;
   overflow: hidden;
+}
+
+.section-title span {
+  color: var(--color-primary);
+  font-family: var(--font-karate);
+  font-weight: 100;
 }
 
 .text-slider {
@@ -350,10 +357,6 @@ h2 {
   overflow: hidden;
 }
 
-/* .about .about-content {
-  overflow: hidden;
-} */
-
 .about .red-line {
   width: 25%;
   height: 0.5rem;
@@ -365,12 +368,6 @@ h2 {
   font-size: 1.6rem;
   letter-spacing: 1px;
   word-spacing: 2px;
-}
-
-.about .section-title span {
-  color: var(--color-primary);
-  font-family: var(--font-karate);
-  font-weight: 100;
 }
 
 .about .about-karate {
@@ -399,7 +396,7 @@ h2 {
   display: grid;
   align-content: center;
   justify-content: center;
-  color: var(--color-primary);
+  color: var(--color-dark-red);
   cursor: pointer;
   transition: all 0.3s;
 }
@@ -415,12 +412,91 @@ h2 {
 
 .about-karate-style h3 {
   font-size: 2.5rem;
-  color: var(--color-primary);
-  font-weight: 400;
+  color: var(--color-dark-red);
+  font-weight: 500;
   font-family: var(--font-ferrum);
   letter-spacing: 2px;
 }
 
 .about .right-sec {
   padding: 5rem;
+}
+
+.gallery {
+  background-color: var(--color-light-gray);
+}
+
+section.gallery {
+  padding: 10rem 0;
+}
+.gallery .section-title {
+  text-align: center;
+}
+
+.gallery .gallery-subtitle {
+  font-size: 2rem;
+  text-align: center;
+  font-style: italic;
+}
+
+.gallary-box-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 5rem;
+  gap: 2rem;
+}
+
+.gallery .box {
+  overflow: hidden;
+  position: relative;
+  height: 400px;
+}
+
+.gallery .box .image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery .box .image img {
+  transition: all 0.3s;
+  height: 100%;
+}
+
+.gallery .box:hover .image img {
+  transform: scale(1.1);
+  filter: blur(1px) grayscale(1);
+}
+
+.gallery .box-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  left: 0;
+  top: 100%;
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.gallery .box-overlay .details {
+  background-color: var(--color-dark-red);
+  padding: 1.5rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.gallery .box-overlay .details h3 {
+  font-size: 2.5rem;
+  color: var(--color-light);
+}
+
+.gallery .box-overlay .details p {
+  font-size: 2rem;
+  color: var(--color-light);
+}
+
+.gallery .box:hover .box-overlay {
+  top: 0;
 }

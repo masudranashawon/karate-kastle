@@ -1,4 +1,5 @@
 import About from "./About";
+import Gallery from "./Gallery";
 import Navbar from "./Navbar";
 import Slider from "./Slider";
 
@@ -8,6 +9,7 @@ const Home = () => {
       <Navbar />
       <Slider />
       <About />
+      <Gallery />
     </div>
   );
 };
