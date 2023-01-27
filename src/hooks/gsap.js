@@ -280,7 +280,7 @@ export const useGsapGallaryForward = (item, obs, delay) => {
         },
       }
     );
-  }, [item, obs]);
+  }, [item, obs, delay]);
 };
 
 export const useGsapGallaryBackward = (item, obs, delay) => {
@@ -306,7 +306,7 @@ export const useGsapGallaryBackward = (item, obs, delay) => {
         },
       }
     );
-  }, [item, obs]);
+  }, [item, obs, delay]);
 };
 
 export const useGsapGallaryDownFall = (item, obs, delay) => {
@@ -332,7 +332,7 @@ export const useGsapGallaryDownFall = (item, obs, delay) => {
         },
       }
     );
-  }, [item, obs]);
+  }, [item, obs, delay]);
 };
 
 export const useGsapGallaryUpward = (item, obs, delay) => {
@@ -358,7 +358,7 @@ export const useGsapGallaryUpward = (item, obs, delay) => {
         },
       }
     );
-  }, [item, obs]);
+  }, [item, obs, delay]);
 };
 
 export const useGsapFooterHeadline = (item, trig) => {
@@ -380,5 +380,5 @@ export const useGsapFooterHeadline = (item, trig) => {
         },
       }
     );
-  }, []);
+  }, [item, trig]);
 };
