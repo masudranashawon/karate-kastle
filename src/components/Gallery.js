@@ -1,16 +1,46 @@
+import { useRef } from "react";
+import {
+  useGsapsectionTextUnvile,
+  useGsapGallaryForward,
+  useGsapGallarySubtitle,
+  useGsapGallaryDownFall,
+  useGsapGallaryBackward,
+  useGsapGallaryUpward,
+} from "../hooks/gsap";
+
 const Gallery = () => {
+  const galleryRef = useRef(null);
+  const sectionTextRef = useRef(null);
+  const subtitleRef = useRef(null);
+  const gallery1 = useRef(null);
+  const gallery2 = useRef(null);
+  const gallery3 = useRef(null);
+  const gallery4 = useRef(null);
+  const gallery5 = useRef(null);
+  const gallery6 = useRef(null);
+
+  useGsapsectionTextUnvile(sectionTextRef, galleryRef);
+  useGsapGallarySubtitle(subtitleRef, galleryRef);
+  useGsapGallaryUpward(gallery5, gallery6, 0);
+  useGsapGallaryDownFall(gallery2, galleryRef, 1.8);
+  useGsapGallaryForward(gallery1, galleryRef, 2.2);
+  useGsapGallaryForward(gallery4, gallery4, 1);
+  useGsapGallaryBackward(gallery3, galleryRef, 2.2);
+  useGsapGallaryBackward(gallery6, gallery6, 1);
+
   return (
-    <section className='gallery' id='gallery'>
+    <section className='gallery' id='gallery' ref={galleryRef}>
       <div className='container'>
         <h2 className='section-title'>
           Our <span>Gallery</span>
+          <span className='text-slider' ref={sectionTextRef}></span>
         </h2>
-        <p className='gallery-subtitle'>
+        <p className='gallery-subtitle' ref={subtitleRef}>
           Experience the power and discipline of Karate Kastle through our photo
           gallery
         </p>
         <div className='gallary-box-wrapper'>
-          <div className='box box-one'>
+          <div className='box box-one' ref={gallery1}>
             <div className='image'>
               <img
                 src='https://images.pexels.com/photos/6455247/pexels-photo-6455247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
@@ -24,7 +54,7 @@ const Gallery = () => {
               </div>
             </div>
           </div>
-          <div className='box box-two'>
+          <div className='box box-two' ref={gallery2}>
             <div className='image'>
               <img
                 src='https://images.pexels.com/photos/7045577/pexels-photo-7045577.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
@@ -38,7 +68,7 @@ const Gallery = () => {
               </div>
             </div>
           </div>
-          <div className='box box-three'>
+          <div className='box box-three' ref={gallery3}>
             <div className='image'>
               <img
                 src='https://images.pexels.com/photos/7045602/pexels-photo-7045602.jpeg?auto=compress&cs=tinysrgb&w=600'
@@ -52,7 +82,7 @@ const Gallery = () => {
               </div>
             </div>
           </div>
-          <div className='box box-four'>
+          <div className='box box-four' ref={gallery4}>
             <div className='image'>
               <img
                 src='https://images.pexels.com/photos/8612000/pexels-photo-8612000.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
@@ -66,7 +96,7 @@ const Gallery = () => {
               </div>
             </div>
           </div>
-          <div className='box box-five'>
+          <div className='box box-five' ref={gallery5}>
             <div className='image'>
               <img
                 src='https://images.pexels.com/photos/8041997/pexels-photo-8041997.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
@@ -80,7 +110,7 @@ const Gallery = () => {
               </div>
             </div>
           </div>
-          <div className='box box-six'>
+          <div className='box box-six' ref={gallery6}>
             <div className='image'>
               <img
                 src='https://images.pexels.com/photos/6832254/pexels-photo-6832254.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'

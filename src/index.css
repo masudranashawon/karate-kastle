@@ -429,8 +429,11 @@ h2 {
 section.gallery {
   padding: 10rem 0;
 }
+
 .gallery .section-title {
   text-align: center;
+  overflow: hidden;
+  margin: 1rem 30vw;
 }
 
 .gallery .gallery-subtitle {

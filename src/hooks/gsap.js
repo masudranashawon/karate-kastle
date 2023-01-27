@@ -230,3 +230,133 @@ export const useGsapAboutBackward = (item, obs) => {
     );
   }, [item, obs]);
 };
+
+export const useGsapGallarySubtitle = (item, obs) => {
+  useEffect(() => {
+    const el = item.current;
+    const trig = obs.current;
+
+    gsap.fromTo(
+      el,
+      {
+        opacity: 0,
+        y: -100,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        delay: 1,
+        ease: "Power4.out",
+        scrollTrigger: {
+          trigger: trig,
+          start: "top center",
+        },
+      }
+    );
+  }, [item, obs]);
+};
+
+export const useGsapGallaryForward = (item, obs, delay) => {
+  useEffect(() => {
+    const el = item.current;
+    const trig = obs.current;
+
+    gsap.fromTo(
+      el,
+      {
+        opacity: 0,
+        x: -100,
+      },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 1,
+        delay: delay,
+        ease: "Power4.out",
+        scrollTrigger: {
+          trigger: trig,
+          start: "top center",
+        },
+      }
+    );
+  }, [item, obs]);
+};
+
+export const useGsapGallaryBackward = (item, obs, delay) => {
+  useEffect(() => {
+    const el = item.current;
+    const trig = obs.current;
+
+    gsap.fromTo(
+      el,
+      {
+        opacity: 0,
+        x: 100,
+      },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 1,
+        delay: delay,
+        ease: "Power4.out",
+        scrollTrigger: {
+          trigger: trig,
+          start: "top center",
+        },
+      }
+    );
+  }, [item, obs]);
+};
+
+export const useGsapGallaryDownFall = (item, obs, delay) => {
+  useEffect(() => {
+    const el = item.current;
+    const trig = obs.current;
+
+    gsap.fromTo(
+      el,
+      {
+        opacity: 0,
+        y: -100,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        delay: delay,
+        ease: "Power4.out",
+        scrollTrigger: {
+          trigger: trig,
+          start: "top center",
+        },
+      }
+    );
+  }, [item, obs]);
+};
+
+export const useGsapGallaryUpward = (item, obs, delay) => {
+  useEffect(() => {
+    const el = item.current;
+    const trig = obs.current;
+
+    gsap.fromTo(
+      el,
+      {
+        opacity: 0,
+        y: 100,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        delay: delay,
+        ease: "Power4.out",
+        scrollTrigger: {
+          trigger: trig,
+          start: "top center",
+        },
+      }
+    );
+  }, [item, obs]);
+};

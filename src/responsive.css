@@ -94,6 +94,9 @@
   .gallary-box-wrapper {
     grid-template-columns: repeat(2, 1fr);
   }
+  .gallery .section-title {
+    font-size: 5vw;
+  }
 }
 
 @media (max-width: 480px) {
