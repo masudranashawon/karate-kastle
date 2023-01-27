@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.626e2d12.css",
+    "main.js": "/static/js/main.7574b337.js",
+    "static/media/karate.woff": "/static/media/karate.7226378b87260c30a158.woff",
+    "static/media/highwind.woff": "/static/media/highwind.401c61292b61e8422804.woff",
+    "static/media/highwindItalic.woff": "/static/media/highwindItalic.5f73ea3ea7813911c180.woff",
+    "static/media/ferrum.woff": "/static/media/ferrum.8736b9b11a32454e1489.woff",
+    "index.html": "/index.html",
+    "main.626e2d12.css.map": "/static/css/main.626e2d12.css.map",
+    "main.7574b337.js.map": "/static/js/main.7574b337.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.626e2d12.css",
+    "static/js/main.7574b337.js"
+  ]
+}
