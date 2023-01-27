@@ -81,6 +81,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -255,7 +256,7 @@ h2 {
   background-size: cover;
   width: 100vw;
   height: 100%;
-  object-fit: contain;
+  background-attachment: fixed;
 }
 
 .slide-content {
@@ -402,6 +403,7 @@ h2 {
   font-family: var(--font-ferrum);
   letter-spacing: 2px;
 }
-.right-sec {
+
+.about .right-sec {
   padding: 5rem;
 }

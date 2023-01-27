@@ -71,11 +71,42 @@
     padding: 1rem 2rem;
     font-size: 2rem;
   }
+
+  .about-container {
+    grid-template-columns: 100%;
+  }
+
+  .about .right-sec {
+    padding: 5rem 20rem 0;
+  }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 680px) {
   .container {
     width: 100%;
     padding: 0 1rem;
+  }
+
+  .about .right-sec {
+    padding: 3rem 10rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+
+  .about .right-sec {
+    padding: 3rem 5rem 0;
+  }
+
+  .about .about-karate {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .about .karate-style:nth-child(3) {
+    order: 2;
   }
 }
