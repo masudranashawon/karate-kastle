@@ -490,6 +490,7 @@ section.gallery {
 .gallery .box-overlay .details h3 {
   font-size: 2.5rem;
   color: var(--color-light);
+  text-transform: capitalize;
 }
 
 .gallery .box-overlay .details p {

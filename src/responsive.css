@@ -90,6 +90,10 @@
   .about .right-sec {
     padding: 3rem 10rem 0;
   }
+
+  .gallary-box-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 480px) {
@@ -108,5 +112,9 @@
 
   .about .karate-style:nth-child(3) {
     order: 2;
+  }
+
+  .gallary-box-wrapper {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
