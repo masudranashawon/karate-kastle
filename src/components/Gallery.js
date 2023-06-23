@@ -2,7 +2,7 @@ import { useRef } from "react";
 import {
   useGsapsectionTextUnvile,
   useGsapGallaryForward,
-  useGsapGallarySubtitle,
+  useGsapSectionSubtitle,
   useGsapGallaryDownFall,
   useGsapGallaryBackward,
   useGsapGallaryUpward,
@@ -20,7 +20,7 @@ const Gallery = () => {
   const gallery6 = useRef(null);
 
   useGsapsectionTextUnvile(sectionTextRef, galleryRef);
-  useGsapGallarySubtitle(subtitleRef, galleryRef);
+  useGsapSectionSubtitle(subtitleRef, galleryRef);
   useGsapGallaryUpward(gallery5, gallery6, 0);
   useGsapGallaryDownFall(gallery2, galleryRef, 1.8);
   useGsapGallaryForward(gallery1, galleryRef, 2.2);

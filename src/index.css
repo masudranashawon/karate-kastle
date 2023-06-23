@@ -9,17 +9,6 @@
 }
 
 @font-face {
-  font-family: "Highwind";
-  src: url("./fonts/highwind.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Highwind Italic";
-  src: url("./fonts/highwindItalic.woff") format("woff");
-  font-style: italic;
-}
-
-@font-face {
   font-family: "Ferrum";
   src: url("./fonts/ferrum.woff") format("woff");
 }
@@ -37,8 +26,6 @@
   --color-light-gray: #eeeeee;
 
   --font-karate: "Karate", serif;
-  --font-highwind: "Highwind", serif;
-  --font-highwind-italic: "Highwind Italic", serif;
   --font-ferrum: "Ferrum", serif;
   --font-roboto: "Roboto", sans-serif;
 }
@@ -422,6 +409,9 @@ h2 {
   padding: 5rem;
 }
 
+/*======================
+  Gallery
+====================== */
 .gallery {
   background-color: var(--color-light-gray);
 }
@@ -505,6 +495,114 @@ section.gallery {
   top: 0;
 }
 
+/*======================
+  Trainers
+====================== */
+section.trainers {
+  padding: 10rem 0;
+  overflow: hidden;
+}
+
+.trainers .section-title {
+  text-align: center;
+  overflow: hidden;
+  margin: 1rem 30vw;
+}
+
+.trainers .trainers-subtitle {
+  font-size: 2rem;
+  text-align: center;
+  font-style: italic;
+}
+
+.trainers .card-header {
+  text-align: center;
+}
+
+.trainers .card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 5rem;
+}
+
+.trainers .card {
+  background-color: var(--color-light-gray);
+  padding: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin: 1rem;
+}
+
+.trainers .card-image {
+  position: relative;
+  bottom: 1.8rem;
+}
+
+.trainers .card-image img {
+  width: 100%;
+  height: auto;
+  margin-top: -30px;
+}
+
+.trainers .card-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  background-color: black;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+.card:hover .card-body {
+  height: auto;
+}
+
+.trainers .card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.trainers .card p {
+  font-size: 1.5rem;
+  color: var(--color-gray);
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.trainers .card-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: -4.9rem;
+  transition: margin 0.3s ease;
+}
+
+.card:hover .card-icons {
+  margin-bottom: 0px;
+}
+
+.trainers .card-icon {
+  color: var(--color-dark-gray);
+  font-size: 19px;
+  transition: color 0.3s ease;
+}
+
+.trainers .card-icon:hover {
+  color: var(--color-dark-red);
+}
+
+/*======================
+  Footer
+====================== */
 footer {
   text-align: center;
   padding: 1vw 0;

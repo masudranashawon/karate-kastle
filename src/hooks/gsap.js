@@ -231,7 +231,7 @@ export const useGsapAboutBackward = (item, obs) => {
   }, [item, obs]);
 };
 
-export const useGsapGallarySubtitle = (item, obs) => {
+export const useGsapSectionSubtitle = (item, obs) => {
   useEffect(() => {
     const el = item.current;
     const trig = obs.current;
@@ -359,6 +359,56 @@ export const useGsapGallaryUpward = (item, obs, delay) => {
       }
     );
   }, [item, obs, delay]);
+};
+
+export const useGsapTrainersScale = (item, obs, delay) => {
+  useEffect(() => {
+    const el = item.current;
+    const trig = obs.current;
+
+    gsap.fromTo(
+      el,
+      {
+        scale: 0,
+      },
+      {
+        scale: 1,
+        duration: 1.5,
+        delay: delay,
+        ease: "elastic",
+        scrollTrigger: {
+          trigger: trig,
+          start: "top center",
+        },
+      }
+    );
+  }, [item, obs, delay]);
+};
+
+export const useGsapTrainersRev = (item, obs, dir, delay) => {
+  useEffect(() => {
+    const el = item.current;
+    const trig = obs.current;
+
+    gsap.fromTo(
+      el,
+      {
+        x: dir,
+        opacity: 0,
+      },
+      {
+        x: 0,
+        opacity: 1,
+        duration: 1.5,
+        delay: delay,
+        ease: "power4.out",
+        scrollTrigger: {
+          trigger: trig,
+          start: "top center",
+        },
+      }
+    );
+  }, [item, obs, dir, delay]);
 };
 
 export const useGsapFooterHeadline = (item, trig) => {
