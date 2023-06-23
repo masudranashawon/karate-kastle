@@ -375,7 +375,7 @@ export const useGsapTrainersScale = (item, obs, delay) => {
         scale: 1,
         duration: 1.5,
         delay: delay,
-        ease: "elastic",
+        ease: "Elastic.easeOut",
         scrollTrigger: {
           trigger: trig,
           start: "top center",
@@ -401,7 +401,7 @@ export const useGsapTrainersRev = (item, obs, dir, delay) => {
         opacity: 1,
         duration: 1.5,
         delay: delay,
-        ease: "power4.out",
+        ease: "Power4.out",
         scrollTrigger: {
           trigger: trig,
           start: "top center",
